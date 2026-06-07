@@ -1,26 +1,147 @@
 {
-  "name": "YSTV - 蜂蜜影视接口",
-  "spider": "",
+  "name": "YSTV - 网盘资源接口",
+  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/qist/tvbox/master/jar/pg.jar;md5;dffec63fb83a2b31b8606bd4bf6bead9",
+  "wallpaper": "https://picsum.photos/1280/720/?blur=10",
   "sites": [
     {
-      "key": "example",
-      "name": "示例站点",
+      "key": "config",
+      "name": "⚙️ 配置中心",
       "type": 3,
-      "api": "csp_XPath",
+      "api": "csp_Config",
+      "searchable": 0,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.5
+      }
+    },
+    {
+      "key": "aliyun",
+      "name": "☁️ 阿里云盘",
+      "type": 3,
+      "api": "csp_Alist",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://alist.nn.ci/",
+      "timeout": 30
+    },
+    {
+      "key": "quark",
+      "name": "🌀 夸克网盘",
+      "type": 3,
+      "api": "csp_Cloud",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "uc",
+      "name": "🔵 UC网盘",
+      "type": 3,
+      "api": "csp_Cloud",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "baidu",
+      "name": "🔴 百度网盘",
+      "type": 3,
+      "api": "csp_Cloud",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "telegram",
+      "name": "📱 TG云盘",
+      "type": 3,
+      "api": "csp_TGYunPanLocal",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "https://t.me/"
+    },
+    {
+      "key": "wogg",
+      "name": "👽 玩偶哥哥",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "wogg": true,
+        "danmu": true
+      }
+    },
+    {
+      "key": "yunpan4k",
+      "name": "🌩️ 云盘4K",
+      "type": 3,
+      "api": "csp_Yunpan4k",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "ext": ""
+      "timeout": 30,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "alist_public",
+      "name": "📂 公共Alist",
+      "type": 3,
+      "api": "csp_AList",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://pan.qqmu.top/",
+      "timeout": 30
+    },
+    {
+      "key": "mylist",
+      "name": "📋 我的收藏",
+      "type": 3,
+      "api": "csp_MyDriveGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "indexs": 0,
+      "style": {
+        "type": "list"
+      }
+    }
+  ],
+  "lives": [
+    {
+      "name": "直播",
+      "type": 0,
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "http://epg.cdn.loc.cc/?ch={name}&date={date}",
+      "logo": "https://logo.wyfc.qzz.io/{name}.png"
     }
   ],
   "parses": [
     {
-      "name": "示例解析",
+      "name": "解析1",
       "type": 1,
-      "url": ""
+      "url": "https://jx.xmflv.com/?url="
+    },
+    {
+      "name": "解析2",
+      "type": 1,
+      "url": "https://www.8090g.cn/?url="
     }
   ],
   "rules": [],
-  "ads": [],
-  "wallpaper": "https://picsum.photos/1280/720/?blur=10"
+  "ads": []
 }
