@@ -1,7 +1,17 @@
 {
-  "name": "YSTV - 网盘资源接口",
-  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/qist/tvbox/master/jar/pg.jar;md5;dffec63fb83a2b31b8606bd4bf6bead9",
   "wallpaper": "https://picsum.photos/1280/720/?blur=10",
+  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/qist/tvbox/master/jar/pg.jar;md5;dffec63fb83a2b31b8606bd4bf6bead9",
+  "lives": [
+    {
+      "name": "直播",
+      "type": 0,
+      "playerType": 1,
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt",
+      "ua": "okhttp/3.15",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "http://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
   "sites": [
     {
       "key": "config",
@@ -16,59 +26,7 @@
       }
     },
     {
-      "key": "aliyun",
-      "name": "☁️ 阿里云盘",
-      "type": 3,
-      "api": "csp_Alist",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://alist.nn.ci/",
-      "timeout": 30
-    },
-    {
-      "key": "quark",
-      "name": "🌀 夸克网盘",
-      "type": 3,
-      "api": "csp_Cloud",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 30
-    },
-    {
-      "key": "uc",
-      "name": "🔵 UC网盘",
-      "type": 3,
-      "api": "csp_Cloud",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 30
-    },
-    {
-      "key": "baidu",
-      "name": "🔴 百度网盘",
-      "type": 3,
-      "api": "csp_Cloud",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 30
-    },
-    {
-      "key": "telegram",
-      "name": "📱 TG云盘",
-      "type": 3,
-      "api": "csp_TGYunPanLocal",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "https://t.me/"
-    },
-    {
-      "key": "wogg",
+      "key": "csp_Wogg",
       "name": "👽 玩偶哥哥",
       "type": 3,
       "api": "csp_Wogg",
@@ -82,7 +40,7 @@
       }
     },
     {
-      "key": "yunpan4k",
+      "key": "csp_Yunpan4k",
       "name": "🌩️ 云盘4K",
       "type": 3,
       "api": "csp_Yunpan4k",
@@ -95,7 +53,18 @@
       }
     },
     {
-      "key": "alist_public",
+      "key": "csp_AList",
+      "name": "☁️ 阿里云盘",
+      "type": 3,
+      "api": "csp_AList",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://alist.nn.ci/",
+      "timeout": 30
+    },
+    {
+      "key": "csp_AListPublic",
       "name": "📂 公共Alist",
       "type": 3,
       "api": "csp_AList",
@@ -106,7 +75,48 @@
       "timeout": 30
     },
     {
-      "key": "mylist",
+      "key": "csp_Cloud",
+      "name": "🌀 夸克网盘",
+      "type": 3,
+      "api": "csp_Cloud",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "csp_CloudUc",
+      "name": "🔵 UC网盘",
+      "type": 3,
+      "api": "csp_Cloud",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "csp_CloudBaidu",
+      "name": "🔴 百度网盘",
+      "type": 3,
+      "api": "csp_Cloud",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "csp_TGYunPanLocal",
+      "name": "📱 TG云盘",
+      "type": 3,
+      "api": "csp_TGYunPanLocal",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "https://t.me/"
+    },
+    {
+      "key": "csp_MyDriveGuard",
       "name": "📋 我的收藏",
       "type": 3,
       "api": "csp_MyDriveGuard",
@@ -117,17 +127,6 @@
       "style": {
         "type": "list"
       }
-    }
-  ],
-  "lives": [
-    {
-      "name": "直播",
-      "type": 0,
-      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.cdn.loc.cc/?ch={name}&date={date}",
-      "logo": "https://logo.wyfc.qzz.io/{name}.png"
     }
   ],
   "parses": [
