@@ -1,0 +1,26 @@
+{
+  "name": "YSTV - 蜂蜜影视接口",
+  "spider": "",
+  "sites": [
+    {
+      "key": "example",
+      "name": "示例站点",
+      "type": 3,
+      "api": "csp_XPath",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": ""
+    }
+  ],
+  "parses": [
+    {
+      "name": "示例解析",
+      "type": 1,
+      "url": ""
+    }
+  ],
+  "rules": [],
+  "ads": [],
+  "wallpaper": "https://picsum.photos/1280/720/?blur=10"
+}
