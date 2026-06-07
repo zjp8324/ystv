@@ -75,34 +75,43 @@
       "timeout": 30
     },
     {
-      "key": "csp_Cloud",
-      "name": "🌀 夸克网盘",
+      "key": "csp_PanQuark",
+      "name": "🔰 夸克盘",
       "type": 3,
-      "api": "csp_Cloud",
+      "api": "csp_PanQuark",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 30
+      "changeable": 1,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
     },
     {
-      "key": "csp_CloudUc",
-      "name": "🔵 UC网盘",
+      "key": "csp_PanUc",
+      "name": "🔰 UC盘",
       "type": 3,
-      "api": "csp_Cloud",
+      "api": "csp_PanUc",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 30
+      "changeable": 1,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
     },
     {
-      "key": "csp_CloudBaidu",
-      "name": "🔴 百度网盘",
+      "key": "csp_PanWebShare",
+      "name": "🎀 玩偶｜4K",
       "type": 3,
-      "api": "csp_Cloud",
+      "api": "csp_PanWebShare",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 30
+      "changeable": 0,
+      "ext": "https://www.wogg.net/"
     },
     {
       "key": "csp_TGYunPanLocal",
