@@ -7,13 +7,13 @@
 在蜂蜜影视/TVBox中使用以下配置地址：
 
 ```
-https://raw.githubusercontent.com/jjp8324/ystv/main/tvbox.json
+https://raw.githubusercontent.com/zjp8324/ystv/main/tvbox.json
 ```
 
 或者使用jsdelivr加速：
 
 ```
-https://cdn.jsdelivr.net/gh/jjp8324/ystv@main/tvbox.json
+https://cdn.jsdelivr.net/gh/zjp8324/ystv@main/tvbox.json
 ```
 
 ## 项目结构
